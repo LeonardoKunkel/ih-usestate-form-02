@@ -1,24 +1,18 @@
 import logo from './logo.svg';
 import './App.css';
+import Header from './components/Layout/Header';
+import Main from './components/Main/Main';
+
 
 function App() {
+
+  // Todo retorno con jsx que se haga, debe de tener una única etiqueta que envuelva al contenido
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <> -> Este concepto se le conoce como fragmento
+    <>
+      <Header />
+      <Main />
+    </>
   );
 }
 
